@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="Footer.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+ 
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Md <span>Modassir</span></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Project.html">Projects</a>
+        <a href="Skill.html">Skills</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <i class="fa-solid fa-bars hamburg" id="hamburg-icon"></i>
+      <i class="fa-solid fa-xmark cancel" id="cancel-icon" style="display: none;"></i>
+    </div>
+    <div class="dropdown" id="dropdown-menu">
+      <div class="dropdown-links">
+        <a href="index.html">Home</a>
+        <a href="Project.html">Projects</a>
+        <a href="Skill.html">Skills</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+<!-- Contact Section -->
+ <br><br> <br>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-text">
+          Feel free to reach out if you have any questions. I'm excited to hear
+          from you!
+        </p>
+        <form
+          action="https://formsubmit.co/mdmodassir805141@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="input-group">
+            <label for="name" >Your Name</label>
+            <input type="text" id="name" name="name" required  placeholder="Enter your full name"/>
+          </div>
+          <div class="input-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address"/>
+          </div>
+          <div class="input-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="smt-button">Send Message</button>
+        </form>
+        <br /> <br>
+        <p>You can also contact me directly via email or call the number below.</p> <br>
+        <p class="contact-text">
+          📧 Email:
+          <a href="mailto:mdmodassir805141@gmail.com"
+            >mdmodassir805141@gmail.com</a
+          ><br />
+          📞 Phone: <a href="tel:+917004848803">+91 70048 48803</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © 2025 Modassir |
+        <a
+          href="https://www.linkedin.com/in/md-modassir-1b175022a"
+          target="_blank"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://github.com/Modassir-Sheikh" target="_blank">GitHub</a>
+      </p>
+    </footer>
+
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Script -->
+  <script src="index.js"></script>
+</body>
+</html>

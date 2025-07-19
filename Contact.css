@@ -1,0 +1,246 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;    }
+
+    body {
+      background-color: black;
+      color: white;
+    }
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  width: 100%;
+  padding: 2.5rem;
+  background: rgba(7, 123, 50, 0.05);
+  border: 1px solid rgba(7, 123, 50, 0.3);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto;
+  width: 80px;
+  height: 3px;
+  background-color: #077b32;
+}
+
+.contact-text {
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #077b32;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.smt-button {
+  background-color: #077b32;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.smt-button:hover {
+  background-color: transparent;
+  border: 2px solid #077b32;
+  color: #077b32;
+}
+
+
+    nav {
+      width: 100%;
+      /* background-color: #111; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo span {
+      color: #077b32;
+      text-shadow: 0 0 10px #077b32;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      font-size: 1.1rem;
+    }
+
+    .nav-links a::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #077b32;
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::before {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: #077b32;
+    }
+
+    .hamburg,
+    .cancel {
+      display: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      z-index: 1001;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(4px);
+      transform: translateY(-500px);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .dropdown-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .dropdown-links a {
+      padding: 1rem;
+      font-size: 1.2rem;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropdown-links a:hover {
+      background-color: #077b32;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburg,
+      .cancel {
+        display: block;
+      }
+    }
+
+    nav.hide-nav {
+      transform: translateY(-100%);
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #077b32;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    #back-to-top:hover {
+      background-color: rgb(8, 8, 8);
+      color: #077b32;
+      box-shadow: 0 0 10px #077b32;
+    }

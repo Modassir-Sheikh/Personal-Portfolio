@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Section</title>
+
+    <!-- Bootstrap + Font Awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+<link rel="stylesheet" href="Project.css">
+<link rel="stylesheet" href="Footer.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Md <span>Modassir</span></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="Project.html">Projects</a>
+      <a href="Skill.html">Skills</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <i class="fa-solid fa-bars hamburg" id="hamburg-icon"></i>
+    <i class="fa-solid fa-xmark cancel" id="cancel-icon" style="display: none;"></i>
+  </div>
+</nav>
+
+<!-- ✅ Move this outside the <nav> -->
+<div class="dropdown" id="dropdown-menu">
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Skill.html">Skills</a>
+    <a href="Project.html">Project</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+    <!-- Project Section -->
+    <section class="project-section" id="projects">
+      <div class="about-container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-list">
+          <!-- Project Item-1 -->
+          <div class="project-item">
+            <div class="project-image">
+              <img src="Image/Train GIF.gif" alt="Project Preview" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Train Ticket Reservation System</h3>
+              <p class="project-description">
+                Where users can search for available trains, login, view book
+                history, view trains and book tickets online. And admin can add
+                trains, login, update train, remove or cancel train.
+              </p>
+              <p class="tech-label">Technologies Used:</p>
+
+              <ul class="project-skills">
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fas fa-code"></i> Servlet</li>
+                <li><i class="fas fa-database"></i> JDBC</li>
+                <li><i class="fas fa-database"></i> Oracle</li>
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              </ul>
+
+              <a
+                href="https://github.com/Modassir-Sheikh/Train-Ticket-Reservation-System"
+                class="cta-button"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Item-2 -->
+          <div class="project-item">
+            <div class="project-image">
+              <img src="Image/weather.gif" alt="Project Preview" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Forcast</h3>
+              <p class="project-description">
+                This project is a responsive web application that provides
+                real-time weather information for any city worldwide. It
+                utilizes the OpenWeatherMap API to fetch current weather data,
+                including temperature, humidity, wind speed, cloud coverage, and
+                sunrise/sunset times.
+              </p>
+              <p class="tech-label">Technologies Used:</p>
+              <ul class="project-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a
+                href="https://github.com/Modassir-Sheikh/Weather-Forcast"
+                class="cta-button"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Item-3 -->
+          <div class="project-item">
+            <div class="project-image">
+              <img src="Image/CalculatorGif (2).gif" alt="Project Preview" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Calculator</h3>
+              <p class="project-description">
+                Developed a modern, responsive calculator web app using HTML,
+                CSS, and JavaScript. It supports basic arithmetic operations,
+                includes a calculation history log, and features a dark/light
+                mode toggle to enhance usability across different environments.
+              </p>
+              <ul class="project-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a
+                href="https://github.com/Modassir-Sheikh/Calculator"
+                class="cta-button"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Item-4 -->
+          <div class="project-item">
+            <div class="project-image">
+              <img src="Image/AgeCalculator.gif" alt="Project Preview" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Age Calculator</h3>
+              <p class="project-description">
+                This is a simple Age Calculator where users can enter their date
+                of birth and the current date. It shows their exact age in
+                years, months, and days.
+              </p>
+              <ul class="project-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a
+                href="https://github.com/Modassir-Sheikh/Age-Calculator"
+                class="cta-button"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+                    <!-- Project Item-5 -->
+          <div class="project-item">
+            <div class="project-image">
+              <img src="Image/Tic-Tac-Toe Game.gif" alt="Project Preview" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Tic-Tac-Toe Game</h3>
+              <p class="project-description">
+                Created a browser-based Tic-Tac-Toe game with JavaScript logic
+                for player turns, win/tie detection, and a toggleable dark mode
+                interface and Reset button.
+              </p>
+              <ul class="project-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+              <a href="https://github.com/Modassir-Sheikh/Tic-Tac-Toe-Game" class="cta-button" target="_blank">View Project</a>
+            </div>
+          </div>
+
+          <!-- Add more projects below -->
+        </div>
+      </div>
+    </section>
+          <!-- Add your projects here (HTML already shared) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-3">
+      <p>
+        © 2025 Modassir |
+        <a
+          href="https://www.linkedin.com/in/md-modassir-1b175022a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_self"
+          >LinkedIn</a
+        >
+        | <a href="https://github.com/Modassir-Sheikh" target="_self">GitHub</a>
+      </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+<script src="index.js"></script>
+
+  </body>
+</html>
